@@ -1,0 +1,266 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Anahy</title> 
+
+    <style> 
+
+        header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            background-color: #b0becf; 
+            padding: 10px 20px; 
+        } 
+
+        .barra-navegacion { 
+            display: flex; 
+            gap: 15px; 
+            margin-top: 10px; 
+        } 
+
+        .boton-nav { 
+            text-decoration: none; 
+            color: rgb(196, 187, 214); 
+            background-color: rgb(194, 229, 229); 
+            padding: 6px 12px; 
+            border-radius: 4px; 
+            font-size: 14px; 
+            font-family: sans-serif; 
+            transition: background-color 0.3s; 
+        } 
+        
+        .boton-nav:hover { 
+            background-color: rgb(128, 121, 141); 
+            color: rgb(172, 194, 213); 
+        } 
+
+        .boton-nav.activo { 
+            background-color: rgb(173, 215, 213); 
+            color: rgb(173, 224, 227); 
+            font-weight: bold; 
+        } 
+
+
+        /* Logo pequeño de la cabecera */
+
+        .logo-pequeno { 
+            width: 100px; 
+            height: auto; 
+            display: block; 
+        } 
+
+
+        /* Imagen de la cabecera */
+
+        .logo-cabecera { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin-bottom: 15px; 
+        } 
+
+
+        /* CONTENEDOR PRINCIPAL */
+
+        main { 
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+            gap: 15px;
+            padding: 20px;
+            align-items: stretch;
+        }
+
+
+        /* COLUMNA DEL ANUNCIO */
+
+        aside { 
+            width: 25%; 
+            background-color: #c4dae4; 
+            padding: 15px; 
+            box-sizing: border-box;
+        } 
+
+
+        /* COLUMNA DEL CONTENIDO */
+
+        section { 
+            width: 75%; 
+            background-color: #c89fa5; 
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+
+        /* TÍTULO DEL CONTENIDO */
+
+        section h2 { 
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+
+        /* TEXTO */
+
+       section p {
+    text-align: justify;
+    line-height: 1.5;
+    max-width: 850px;
+    margin: 0;
+    font-size: 18px;
+    font-family: Georgia, serif;
+}
+
+
+        /* IMAGEN DEL ANUNCIO */
+
+        .anuncio-lateral img { 
+            width: 100%; 
+            height: 700px; 
+            object-fit: cover; 
+            border-radius: 10px; 
+            display: block; 
+        }
+
+
+        /* PIE DE PÁGINA */
+
+        footer {
+            padding: 10px 20px;
+        }
+        footer {
+    background-color: #e8d4f5;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: rgb(184, 216, 228);
+    text-decoration: none;
+}
+
+.logo-instagram {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+       /*Imagen de insta*/
+        .logo-instagram {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.titulo-anuncio{
+    color: azure;
+    line-height: 1.5;
+    max-width: 850px;
+    margin: 0;
+    font-size: 18px;
+    font-family: Georgia, serif;
+}
+/* IMAGEN CENTRADA */
+.imagen-centro {
+    display: block;           /* Permite centrarla con margin auto */
+    margin: 0 auto 25px auto; /* Centrada horizontalmente y con espacio abajo */
+    width: 80%;               /* Tamaño medio: ocupa el 60% del ancho */
+    max-width: 450px;         /* No crece más de 450px en pantallas grandes */
+    height: auto;             /* Mantiene la proporción */
+    border: 6px solid #13dbcb;/* Marco bonito (puedes cambiar el grosor y color) */
+    border-radius: 12px;      /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Sombra suave opcional */
+}
+    </style> 
+</head> 
+
+
+<body> 
+
+    <header> 
+
+        <div> 
+
+            <h1 style="margin: 0;">Cornelio Vega</h1> 
+
+            <nav class="Menú de navegación"> 
+
+                <a href="anahy.html" class="boton-nav activo">Cornelio Vega</a> 
+                <a href="anahy2.html" class="boton-nav">Algo de el</a> 
+                <a href="anahy3.html" class="boton-nav">informacion</a> 
+
+            </nav> 
+
+        </div> 
+
+        <img src="imagenes/vega4.jpg" 
+             alt="Logo de Mi Sitio Web" 
+             class="logo-pequeno"> 
+
+    </header> 
+
+
+    <main> 
+
+        <!-- ANUNCIO -->
+
+        <aside class="anuncio-lateral"> 
+<a class="titulo-anuncio"><h3>¡Oreo la mejor amiga de la leche!</h3></a>
+             
+
+            <img src="imagenes/oreo.jpg" 
+                 alt="Anuncio"> 
+
+        </aside> 
+
+
+        <!-- CONTENIDO -->
+
+        <section> 
+
+            <article> 
+                <img src="imagenes/vega6.jpg" alt="Cornelio vega jr" class="imagen-centro">
+
+                <h2>Cornelio Vega Jr</h2> 
+
+                <p>
+                    Cornelio Vega Jr. es un cantante, compositor y acordeonista mexicano de música regional, 
+                    nacido el 9 de abril de 1999 en Ciudad Obregón, Sonora
+                   </p> 
+
+                   <p class="dato-especial">
+                    • Cornelio Vega Jr. empezó a ganar popularidad gracias a las redes sociales, donde 
+                    compartía videos cantando antes de consolidarse como uno de los jóvenes artistas 
+                    del regional mexicano.</p>
+                </p>
+
+            </article> 
+
+        </section> 
+
+    </main> 
+
+
+    <footer> 
+        <footer> 
+    <p>
+        creado por: Gonzalez Anahy
+        Instagram:
+        
+        <a href="https://www.instagram.com/_004or/" target="_blank">
+            <img src="imagenes/insta.jpg" 
+                 alt="Instagram" 
+                 class="logo-instagram">
+            @_004or
+        </a>
+    </p>
+</footer>
+    </footer> 
+
+</body> 
+
+</html>
